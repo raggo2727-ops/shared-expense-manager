@@ -8,9 +8,13 @@ const app= express();
 
 app.use(cors());
 app.use(express.json());
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI)
 .then(() => {
-    console.log("MongoDBConnected");})
+    console.log("MongoDBConnected");
+    app.listen(PORT , () => {
+        console.log("Server is running on port 5000");
+    });
+})
 .catch((err) => {
     console.log(err);});
 
@@ -76,4 +80,3 @@ app.get("/expenses", async (req,res) => {
     }
 });
 
-app.listen(PORT, () => {console.log(`Server is running on port ${PORT}`);});
