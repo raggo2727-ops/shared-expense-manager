@@ -57,7 +57,9 @@ app.post("/expenses", async (req,res) => {
             description: req.body.description,
             date: req.body.date
         });
+        console.log(req.body);
         await expense.save();
+        console.log("Expense saved:",expense)
         res.json({
             message: "Expense added successfully",
             expense: expense

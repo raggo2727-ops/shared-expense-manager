@@ -6,7 +6,6 @@ A full-stack web app to manage shared expenses among multiple users.
 2. ADD EXPENSES
 3. STORE DATA IN MONGODB ATLAS
 4. VIEW EXPENSE HISTORY
-5. DATA PERSISTS AFTER PAGE REFRESH
 
 ## Tech Stacks
 1. HTML

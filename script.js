@@ -109,5 +109,5 @@ async function loadExpenses(){
     });
 }
 
-loadMembers();
-loadExpenses();
+// loadMembers();
+// loadExpenses();
