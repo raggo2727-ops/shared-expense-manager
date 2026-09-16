@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+    <title>Shared Expense Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shared Expense Manager</h1>
+        <div class = "box">
+            <h2>Add Member</h2>
+            <input type="text" id="memberName" placeholder="Enter member name">
+            <button id="addMemberBtn">Add Member</button>
+            <ul id="memberList"></ul>
+        </div>
+        <div class="box">
+            <h2>Add Expense</h2>
+            <select id="payer">
+                <option>Select Payer</option>
+            </select>
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="text" id="description" placeholder="Description">
+            <input type="date" id="date">
+            <button id="saveExpenseBtn">Save Expense</button>
+        </div>
+        <div class="box">
+            <h2>Expense History</h2>
+            <table>
+                <tr>
+                    <th>Payer</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                </tr>
+                <tbody id="expenseTable"></tbody>
+            </table>
+        </div>
+        <div class="box">
+            <h2>Statistics</h2>
+            <p>Total Expenses: $<span id="totalExpense">0</span></p>
+            <p>Total Transactions: <span id="totalTransactions">0</span></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
